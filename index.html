@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -841,7 +840,13 @@
             <h2 class="section-title">Prêt à booster votre croissance ?</h2>
             <p class="section-subtitle">Contactez-nous pour un audit gratuit de vos campagnes actuelles</p>
             
-            <form class="contact-form" action="https://formspree.io/f/mqagaqlw">
+            <form class="contact-form" action="https://formspree.io/f/mqagaqlw" method="POST">
+                <!-- Formspree Configuration -->
+                <input type="hidden" name="_subject" value="🔥 Nouveau lead Primarque Media">
+                <input type="hidden" name="_next" value="https://primarque-media2html.vercel.app/#contact">
+                <input type="hidden" name="_language" value="fr">
+                <input type="hidden" name="_autoresponse" value="Merci pour votre message ! Notre équipe vous contactera sous 24h.">
+                
                 <div class="form-group">
                     <label for="name">Nom complet *</label>
                     <input type="text" id="name" name="name" placeholder="Votre nom" required>
@@ -945,32 +950,6 @@
                 behavior: 'smooth'
             });
         }
-
-    
-            alert('✅ Merci pour votre message ! Notre équipe vous contactera sous 24h.');
-            
-            // Reset form
-            this.reset();
-
-            // In production, replace the alert with something like:
-            /*
-            fetch('your-endpoint-url', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData)
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert('✅ Merci pour votre message !');
-                this.reset();
-            })
-            .catch(error => {
-                alert('❌ Une erreur est survenue. Veuillez réessayer.');
-            });
-            */
-        });
 
         // ====================================
         // Smooth Scroll for Anchor Links
