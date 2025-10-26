@@ -946,22 +946,7 @@
             });
         }
 
-        // ====================================
-        // Form Submission Handler
-        // ====================================
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                message: document.getElementById('message').value
-            };
-
-            // Here you would typically send the data to your server
-            // For now, we'll just show a success message
+    
             alert('✅ Merci pour votre message ! Notre équipe vous contactera sous 24h.');
             
             // Reset form
